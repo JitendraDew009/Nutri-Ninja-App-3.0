@@ -4,6 +4,12 @@ Nutri Ninja is a React Native mobile application that helps users analyze packag
 
 ---
 
+##  Demo Video
+
+🔗 Live Demo: *(https://www.linkedin.com/posts/jitendradewangan_ai-healthtech-startupjourney-activity-7434648226622013440--yk8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFmaX9wBTd0yGSkiUzk_lEUlFo2dzgAFxcE)*  
+
+---
+
 ## 🚀 Features
 
 ### 📷 Barcode Scanning
