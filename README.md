@@ -6,7 +6,7 @@ Nutri Ninja is a React Native mobile application that helps users analyze packag
 
 ##  Demo Video
 
-🔗 Live Demo: *<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7443030294250754048?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>*  
+🔗 Live Demo: <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7443030294250754048?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
 ---
 
