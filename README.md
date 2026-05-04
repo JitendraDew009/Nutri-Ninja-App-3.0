@@ -1,50 +1,156 @@
-# Welcome to your Expo app 👋
+# 🥷 Nutri Ninja – Smart Food Scanner App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Nutri Ninja is a React Native mobile application that helps users analyze packaged food products instantly by scanning barcodes or entering them manually. It provides detailed nutritional insights, health scores, ingredient analysis, and smart warnings to help users make better food choices.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
 
-   ```bash
-   npm install
-   ```
+### 📷 Barcode Scanning
+- Scan product barcodes using camera (Expo Camera)
+- Supports formats like EAN-13, UPC, Code128
+- Manual barcode entry fallback
 
-2. Start the app
+### 🌍 Open Food Facts Integration
+- Fetches real-time product data from Open Food Facts API
+- Includes caching for faster repeat lookups
 
-   ```bash
-   npx expo start
-   ```
+### 🧠 Smart Health Analysis
+- Health Score (1–100) based on:
+  - Sugar, fat, salt
+  - Fiber and protein
+  - Additives impact
 
-In the output, you'll find options to open the app in a
+### 🚦 Traffic Light System
+- Visual indicators for:
+  - Sugar levels
+  - Salt levels
+- Easy red/yellow/green understanding
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 📊 Nutrition Visualization
+- Macro Bar Chart (Fat, Carbs, Protein, etc.)
+- Radar Chart for overall nutrient balance
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### ⚠️ Smart Warnings
+- Detects:
+  - High sugar, salt, saturated fat
+  - Allergens (milk, soy, gluten, etc.)
+  - Suspicious additives
 
-## Get a fresh project
+### 🧪 Ingredient Scanner
+- Identifies harmful or artificial ingredients:
+  - Preservatives
+  - Artificial colors
+  - MSG and sweeteners
 
-When you're ready, run:
+### 🧾 Additives Risk Analysis
+- Categorizes additives into:
+  - High risk
+  - Moderate risk
+  - Low risk
+
+### 💾 Offline Cache
+- Stores previously scanned products locally
+- Improves performance and reduces API calls
+
+---
+
+## 🛠️ Tech Stack
+
+- React Native (Expo)
+- TypeScript
+- Expo Camera API
+- AsyncStorage (local caching)
+- Open Food Facts API
+
+---
+
+## 📱 App Flow
+
+1. Launch app → Welcome screen  
+2. Start camera or enter barcode manually  
+3. Scan product  
+4. Fetch product data  
+5. Display:
+   - Product details
+   - Health score
+   - Nutrition charts
+   - Warnings & ingredient insights  
+
+---
+
+## 📦 Installation
 
 ```bash
-npm run reset-project
+git clone https://github.com/your-username/nutri-ninja.git
+cd nutri-ninja
+
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🔐 Permissions
 
-To learn more about developing your project with Expo, look at the following resources:
+- Camera access required for barcode scanning
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## ⚙️ Key Functional Modules
 
-Join our community of developers creating universal apps.
+### 1. Product Fetching
+- API: Open Food Facts
+- Normalization layer to handle missing data
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 2. Health Score Algorithm
+- Penalizes:
+  - Sugar
+  - Saturated fat
+  - Salt
+- Rewards:
+  - Fiber
+  - Protein
+
+### 3. Smart Warning Engine
+- Rule-based detection system
+- Allergen + additive scanning
+
+### 4. Caching System
+- Uses AsyncStorage
+- Key: `off_product_cache_v1`
+
+---
+
+## ⚠️ Disclaimer
+
+- This app is a prototype  
+- Data is sourced from Open Food Facts  
+- Always verify nutrition labels for medical or clinical use  
+
+---
+
+## 👨‍💻 Author
+
+**Jitendra Dewangan**  
+Creator of Nutri Ninja  
+
+---
+
+## 🌟 Future Improvements
+
+- AI-based personalized health recommendations  
+- User profile (diet preferences, allergies)  
+- Offline scanning with ML models  
+- Food comparison feature  
+- Cloud sync & analytics dashboard  
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Feel free to fork the repo and submit pull requests.
+
+---
+
