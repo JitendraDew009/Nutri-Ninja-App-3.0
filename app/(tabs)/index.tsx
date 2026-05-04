@@ -965,7 +965,6 @@ export default function App() {
                 </ThemedText>
               )}
             </View>
-
             <View style={styles.section}>
               <ThemedText style={styles.sectionTitle}>
                 Clean Ingredients Scan
